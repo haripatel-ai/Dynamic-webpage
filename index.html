@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Academic Performance</title>
+
+    <link rel="stylesheet" href="practical-15.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="practical-15.js" defer></script>
+</head>
+
+<body>
+
+    <h1>Student Performance Report</h1>
+
+    <div id="studentData"></div>
+
+    <canvas id="marksChart"></canvas>
+
+    <script>
+        const chartArea = document.getElementById("marksChart");
+
+        new Chart(chartArea, {
+            type: "bar",
+
+            data: {
+                labels: ["Riya", "Karan", "Neha"],
+
+                datasets: [{
+                    label: "Examination Marks",
+                    data: [88, 76, 93]
+                }]
+            },
+
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

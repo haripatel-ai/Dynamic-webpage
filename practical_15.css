@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef3f8;
+    margin: 0;
+    padding: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+#studentData {
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+}
+
+.student-card {
+    background-color: white;
+    padding: 18px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border-left: 5px solid #555;
+    box-shadow: 0 2px 6px #bbb;
+}
+
+.student-card h3 {
+    margin: 0 0 10px;
+    color: #222;
+}
+
+.student-card p {
+    margin: 0;
+    color: #666;
+}
+
+#marksChart {
+    width: 90%;
+    max-width: 650px;
+    margin: 35px auto;
+    display: block;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
